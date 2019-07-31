@@ -13,24 +13,24 @@ class App extends React.Component{
     return(
        <div>
     <Router>
-         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+         <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
 
-  <a class="navbar-brand" href="#">ABC online</a>
-  <ul class="navbar-nav">
-    <li class="nav-item">
-      <Link class="nav-link" to="/">Home</Link>
+  <a className="navbar-brand" href="#">ABC online</a>
+  <ul className="navbar-nav">
+    <li className="nav-item">
+      <Link className="nav-link" to="/">Home</Link>
     </li>
-    <li class="nav-item">
-      <Link class="nav-link" to="/courses">Courses</Link>
+    <li className="nav-item">
+      <Link className="nav-link" to="/courses">Courses</Link>
     </li>
-    <li class="nav-item">
-      <Link class="nav-link" to="/offers">Offers</Link>
+    <li className="nav-item">
+      <Link className="nav-link" to="/offers">Offers</Link>
     </li>
-    <li class="nav-item">
-      <Link class="nav-link" to="/reviews">Reviews</Link>
+    <li className="nav-item">
+      <Link className="nav-link" to="/reviews">Reviews</Link>
     </li>
-    <li class="nav-item">
-      <Link class="nav-link" to="/resources">Resources</Link>
+    <li className="nav-item">
+      <Link className="nav-link" to="/resources">Resources</Link>
     </li>
   </ul>
 </nav>
