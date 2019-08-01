@@ -9,7 +9,7 @@ export class CourseItem extends React.Component{
         <div className="media-body">
           <h4>{this.props.course.modulename}</h4>
           <p>{this.props.course.description}</p>
-          <h6>Price:: {this.props.course.price}</h6>
+          <h6>Price:: &#8377;{this.props.course.price}</h6>
           <h5>Duration:: {this.props.course.duration} hours</h5>
         </div>
          </div>

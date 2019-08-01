@@ -4,9 +4,11 @@ import {CourseItem} from './subcomp/CourseItem'
 export class Home extends React.Component{
     constructor(props){
         super(props);
+        
         this.state={
             courses:[]
         }
+       
     }
     render(){
         console.log("rendering");
