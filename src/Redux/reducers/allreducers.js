@@ -10,3 +10,14 @@ export let OfferReducer =(state=offer,action)=>{
     }
 
 }
+
+export let ReviewReducer=(state={reviews:[]},action)=>{
+    switch(action.type){
+        case 'REVIEW_ACTION':
+             return {reviews:action.reviews};
+        default:
+             return state;
+    }
+}
+
+

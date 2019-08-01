@@ -4,12 +4,16 @@ import './index.css';
 import App from './App';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
+import thunk from 'redux-thunk';
 import * as serviceWorker from './serviceWorker';
-import { createStore } from 'redux';
+import { createStore,applyMiddleware } from 'redux';
 import {Provider} from 'react-redux';
 import {appstate} from './Redux/mappings/componentMappings' 
+import { ReviewAction } from './Redux/actions/reviewaction';
 
-const store=createStore(appstate);
+const store=createStore(appstate,applyMiddleware(thunk));
+
+store.dispatch(ReviewAction());
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 

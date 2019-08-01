@@ -3,8 +3,7 @@ import {BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
 import { Home } from './components/Home';
 import { Video } from './components/Video';
-import { OfferComponent } from './Redux/mappings/componentMappings';
-import { Review } from './components/Review';
+import { OfferComponent, ReviewComponent } from './Redux/mappings/componentMappings';
 import { Course } from './components/Course';
 import { Resource } from './components/Resource';
 
@@ -39,7 +38,7 @@ class App extends React.Component{
           <Route exact path="/" component={Home} />
           <Route path="/videos" component={Video} />
           <Route path="/offers" component={OfferComponent} />
-          <Route path="/reviews" component={Review}/>
+          <Route path="/reviews" component={ReviewComponent}/>
           <Route path="/courses" component={Course}/>
           <Route path="/resources" component={Resource}/>
   </div>
